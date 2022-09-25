@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        array=[22, 26, 16, 24, 30, 26, 18, 27, 29, 27, 23, 25, 21, 33, 30, 29, 32, 32, 21, 33, 21, 30, 35, 31]
+
+        let max=array[0];
+        let min=array[0];
+        let avg=0;
+        let limit=25;
+
+        for(let i=0;i<array.length;i++){
+            
+            if (max<array[i]){
+                max=array[i]
+            }
+           
+        }
+        for(let i=0;i<array.length;i++){
+            
+            if(min>array[i]){
+                min=array[i]
+            }
+        }
+
+        for(let i=0;i<array.length;i++){
+
+            avg=array[i]+avg;
+            
+        }
+           avg=avg/array.length;
+
+           let count=0;
+           for(let i=0;i<array.length;i++){
+            if (array[i]<limit){
+                count=count+1;
+              
+            }}
+            
+
+            let count2=0
+            for(let i=0;i<array.length;i++){
+                if (array[i]>limit){
+                    count2=count2+1;
+                }
+            }
+            
+            
+          
+        
+        console.log("Array is",array);
+        console.log("Max number is",max);
+        console.log("Minimun number is",min);
+        console.log("Average is",avg);
+        console.log("Limit is 25");
+        console.log((count*100)/array.length);
+        console.log((count2*100)/array.length);
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
